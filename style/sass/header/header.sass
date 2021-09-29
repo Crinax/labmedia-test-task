@@ -5,6 +5,31 @@
     display: flex
     justify-content: flex-start
     align-items: center
-    border-bottom: 1px solid $border
-    height: 50px
+    border-bottom: 1px solid $block-divider
+    height: 60px
+    position: relative
+
+    @media screen and (max-width: 320px)
+      height: 50px
+    
+    @media (max-width: 750px) and (min-width: 321px)
+      &::after
+        content: ''
+        height: 3px
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $accent
+        width: 149px
+
+    @media (min-width: 751px)
+      &::after
+        content: ''
+        height: 3px
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $accent
+        width: 207px
+    
     @include create-navbar

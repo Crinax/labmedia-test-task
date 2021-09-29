@@ -1,6 +1,12 @@
 @mixin create-logo-e
   .header__logo-e
-    width: 25px
-    height: 25px
+    width: 35px
+    height: 35px
+    background-size: 35px 35px
+    @media screen and (max-width: 320px)
+      width: 25px
+      height: 25px
+      background-size: 25px 25px
     margin: 0 0 0 15px
     background-image: url('../img/Logo_e.svg')
+    background-repeat: no-repeat

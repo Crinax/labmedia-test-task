@@ -1,0 +1,28 @@
+@mixin create-new-display
+  .phone-features__display
+    width: 290px
+    height: 307px
+    border-radius: 5px
+    background-color: $black
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-left: 15px
+    .display__image-wrap
+      width: 260px
+      height: 158px
+      display: flex
+      justify-content: center
+      border-bottom: 1px solid $phone-divider
+      margin-bottom: 20px
+      .image-wrap__image
+        width: 230px
+        height: 158px
+    .display__text
+      width: 260px
+      color: $white
+      font-style: normal
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px

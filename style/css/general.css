@@ -34,8 +34,36 @@ body .header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #EFEFEF;
-  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: relative;
+}
+@media screen and (max-width: 320px) {
+  body .header {
+    height: 50px;
+  }
+}
+@media (max-width: 750px) and (min-width: 321px) {
+  body .header::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #D70E2A;
+    width: 149px;
+  }
+}
+@media (min-width: 751px) {
+  body .header::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #D70E2A;
+    width: 207px;
+  }
 }
 body .header .header__burger {
   height: 16px;
@@ -54,21 +82,41 @@ body .header .header__burger-line {
 body .header .header__burger .burger-line-2 {
   margin: 5px 0;
 }
+body .header .header__logo-e {
+  width: 35px;
+  height: 35px;
+  background-size: 35px 35px;
+  margin: 0 0 0 15px;
+  background-image: url("../img/Logo_e.svg");
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 320px) {
+  body .header .header__logo-e {
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+  }
+}
 body .header .header__logo-m {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
   margin: 0 0 0 15px;
   background-image: url("../img/Logo_m.svg");
 }
-body .header .header__logo-e {
-  width: 25px;
-  height: 25px;
-  margin: 0 0 0 15px;
-  background-image: url("../img/Logo_e.svg");
+@media screen and (max-width: 320px) {
+  body .header .header__logo-m {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
+}
+body .smartphone-name {
+  display: none;
 }
 @media screen and (max-width: 320px) {
   body .smartphone-name {
-    background-color: #F9F9F9;
+    background-color: #EFEFEF;
     width: 100%;
     height: 24px;
     display: flex;
@@ -83,4 +131,64 @@ body .header .header__logo-e {
     height: max-content;
     color: #171717;
   }
+}
+body .main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+body .main .main__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+body .main .main__line {
+  width: 290px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  margin: 20px auto;
+}
+body .main .main__subtitle {
+  font-size: 22px;
+  line-height: 31px;
+  margin: 0 15px 30px 15px;
+}
+body .main .main__phone-features {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+body .main .main__phone-features .phone-features__display {
+  width: 290px;
+  height: 307px;
+  border-radius: 5px;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+body .main .main__phone-features .phone-features__display .display__image-wrap {
+  width: 260px;
+  height: 158px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 20px;
+}
+body .main .main__phone-features .phone-features__display .display__image-wrap .image-wrap__image {
+  width: 230px;
+  height: 158px;
+}
+body .main .main__phone-features .phone-features__display .display__text {
+  width: 260px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
 }

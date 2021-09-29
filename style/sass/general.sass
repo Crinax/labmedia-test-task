@@ -2,6 +2,7 @@
 @import 'colors'
 @import 'header/header'
 @import 'smartphone-name/smartphone-name'
+@import 'main/main'
 
 *
   font-family: 'PT Root UI'
@@ -10,5 +11,5 @@ body
   margin: 0
   padding: 0
   @include create-header
-  @media screen and (max-width: 320px)
-    @include create-smartphone-name
+  @include create-smartphone-name
+  @include create-main

@@ -1,6 +1,11 @@
 @mixin create-logo-m
   .header__logo-m
-    width: 30px
-    height: 30px
+    width: 40px
+    height: 40px
+    background-size: 40px 40px
+    @media screen and (max-width: 320px)
+      width: 30px
+      height: 30px
+      background-size: 30px 30px
     margin: 0 0 0 15px
     background-image: url('../img/Logo_m.svg')

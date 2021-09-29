@@ -1,0 +1,14 @@
+@import 'components/title'
+@import 'components/line'
+@import 'components/subtitle'
+@import 'components/phone-features'
+
+@mixin create-main
+  .main
+    width: 100vw
+    display: flex
+    flex-direction: column
+    @include create-title
+    @include create-line
+    @include create-subtitle
+    @include create-phone-features
