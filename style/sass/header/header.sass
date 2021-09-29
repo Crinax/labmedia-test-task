@@ -1,0 +1,10 @@
+@import 'navbar/navbar'
+
+@mixin create-header
+  .header
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    border-bottom: 1px solid #EFEFEF
+    height: 50px
+    @include create-navbar

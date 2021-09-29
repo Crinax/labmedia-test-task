@@ -1,0 +1,8 @@
+@import 'logo_e'
+@import 'logo_m'
+
+@mixin create-logo($logo)
+  @if $logo == e
+    @include create-logo-m
+  @if $logo == m
+    @include create-logo-e

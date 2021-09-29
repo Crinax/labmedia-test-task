@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI Medium"), local("PTRootUI-Medium"), url("Ptrootuimedium.woff2") format("woff2"), url("Ptrootuimedium.woff") format("woff"), url("Ptrootuimedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI Light"), local("PTRootUI-Light"), url("Ptrootuilight.woff2") format("woff2"), url("Ptrootuilight.woff") format("woff"), url("Ptrootuilight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI"), local("PTRootUI-Regular"), url("Ptrootui.woff2") format("woff2"), url("Ptrootui.woff") format("woff"), url("Ptrootui.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI Bold"), local("PTRootUI-Bold"), url("Ptrootuibold.woff2") format("woff2"), url("Ptrootuibold.woff") format("woff"), url("Ptrootuibold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #EFEFEF;
+  height: 50px;
+}
+body .header .header__burger {
+  height: 16px;
+  width: 24px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15px 0 auto;
+}
+body .header .header__burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #D70E2A;
+}
+body .header .header__burger .burger-line-2 {
+  margin: 5px 0;
+}
+body .header .header__logo-m {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 15px;
+  background-image: url("../img/Logo_m.svg");
+}
+body .header .header__logo-e {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 0 15px;
+  background-image: url("../img/Logo_e.svg");
+}
