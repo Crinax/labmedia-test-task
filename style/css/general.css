@@ -22,8 +22,31 @@
   font-weight: 700;
   font-style: normal;
 }
+body .main .main__video-features .video-features__feature {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main .main__video-features .video-features__feature:nth-child(even) {
+  margin: 30px 0;
+}
+
+body .main .main__video-features .video-features__feature .feature__image {
+  width: 60px;
+  height: 60px;
+}
+
+body .main .main__video-features .video-features__feature .feture__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 * {
   font-family: "PT Root UI";
+  transition-duration: 0.4s;
 }
 
 body {
@@ -161,7 +184,7 @@ body .main .main__phone-features {
   flex-wrap: wrap;
   flex-direction: row;
 }
-body .main .main__phone-features .phone-features__display {
+body .main .main__phone-features .phone-features__display, body .main .main__phone-features .phone-features__case {
   width: 290px;
   height: 307px;
   border-radius: 5px;
@@ -170,9 +193,9 @@ body .main .main__phone-features .phone-features__display {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 15px;
+  margin: 0px 0px 40px 15px;
 }
-body .main .main__phone-features .phone-features__display .display__image-wrap {
+body .main .main__phone-features .phone-features__display .display__image-wrap, body .main .main__phone-features .phone-features__case .display__image-wrap {
   width: 260px;
   height: 158px;
   display: flex;
@@ -180,15 +203,84 @@ body .main .main__phone-features .phone-features__display .display__image-wrap {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   margin-bottom: 20px;
 }
-body .main .main__phone-features .phone-features__display .display__image-wrap .image-wrap__image {
+body .main .main__phone-features .phone-features__display .display__image-wrap .image-wrap__image, body .main .main__phone-features .phone-features__case .display__image-wrap .image-wrap__image {
   width: 230px;
   height: 158px;
 }
-body .main .main__phone-features .phone-features__display .display__text {
+body .main .main__phone-features .phone-features__display .display__text, body .main .main__phone-features .phone-features__case .display__text {
   width: 260px;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+}
+body .main .main__phone-features .phone-features__possible-colours, body .main .main__phone-features .phone-features__glass {
+  width: 142px;
+  height: 165px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 7px 0 15px;
+}
+body .main .main__phone-features .phone-features__possible-colours .possible-colours__image, body .main .main__phone-features .phone-features__glass .possible-colours__image, body .main .main__phone-features .phone-features__glass .glass__image {
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/colours_s10.svg");
+}
+body .main .main__phone-features .phone-features__possible-colours .possible-colours__text, body .main .main__phone-features .phone-features__glass .possible-colours__text, body .main .main__phone-features .phone-features__glass .glass__text {
+  width: 142px;
+  height: 85px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+}
+body .main .main__phone-features .phone-features__glass {
+  margin-left: 0;
+}
+body .main .main__phone-features .phone-features__glass .glass__image {
+  background-image: url("../img/gorilla_glass.svg");
+}
+body .main .main__phone-features .phone-features__case {
+  background-color: transparent;
+  padding: 0;
+}
+body .main .main__phone-features .phone-features__case .case__image {
+  width: 154px;
+  height: 180px;
+}
+body .main .main__phone-features .phone-features__case .case__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+body .main .main__phone-features .phone-features__case .case__subimage-line {
+  width: 290px;
+  height: 1px;
+  margin: 25px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+body .main .main__video-img {
+  width: 320px;
+  height: 170px;
+}
+body .main .main__video-features {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px;
+  margin-right: 0;
+}
+body .main .main__video-features .video-features__feature .feature__image.slowmotion {
+  background-image: url("../img/slowmotion.svg");
+}
+body .main .main__video-features .video-features__feature .feature__image.stabilization {
+  background-image: url("../img/stabilization.svg");
+}
+body .main .main__video-features .video-features__feature .feature__image.quality {
+  background-image: url("../img/quality.svg");
 }

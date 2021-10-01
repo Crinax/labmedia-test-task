@@ -1,4 +1,7 @@
 @import 'phone-features/new-display'
+@import 'phone-features/possible-colours'
+@import 'phone-features/gorilla-glass'
+@import 'phone-features/сeramic-case'
 
 @mixin create-phone-features
   .main__phone-features
@@ -6,3 +9,6 @@
     flex-wrap: wrap
     flex-direction: row
     @include create-new-display
+    @include create-possible-colours
+    @include create-gorilla-glass
+    @include create-ceramic-case

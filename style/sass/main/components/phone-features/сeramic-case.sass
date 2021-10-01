@@ -1,0 +1,20 @@
+@import 'new-display'
+
+@mixin create-ceramic-case
+  .phone-features__case
+    @extend .phone-features__display
+    background-color: transparent
+    padding: 0
+    .case__image
+      width: 154px
+      height: 180px
+    .case__text
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+    .case__subimage-line
+      width: 290px
+      height: 1px
+      margin: 25px 0 20px 0
+      background-color: $block-divider
+      border: none

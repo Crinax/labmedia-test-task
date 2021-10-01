@@ -1,0 +1,12 @@
+@import 'possible-colours'
+
+@mixin create-gorilla-glass
+  .phone-features__glass
+    @extend .phone-features__possible-colours
+    margin-left: 0
+    .glass__image
+      @extend .possible-colours__image
+      background-image: url('../img/gorilla_glass.svg')
+    .glass__text
+      @extend .possible-colours__text
+      
