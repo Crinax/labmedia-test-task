@@ -1,0 +1,9 @@
+@import '../accessory-element'
+
+@mixin create-image-block
+  .accessories__image-block
+    width: 290px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @include create-accessory-element(image-block)

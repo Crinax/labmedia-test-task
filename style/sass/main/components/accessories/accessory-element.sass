@@ -1,0 +1,8 @@
+@import 'elements/image-element'
+@import 'elements/line-element'
+
+@mixin create-accessory-element($element)
+  @if $element == image-element
+    @include create-image-element
+  @if $element == line-element
+    @include create-line-element

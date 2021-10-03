@@ -1,0 +1,10 @@
+@import 'accessories/accessory-block'
+
+@mixin create-accessories
+  .main__accessories
+    width: 290px
+    display: flex
+    flex-direction: column
+    margin-right: 15px
+    @each $item in (image-block, line-block)
+      @include create-accessory-block($item)

@@ -1,0 +1,9 @@
+@import '../accessory-element'
+
+@mixin create-line-block
+  .accessories__line-block
+    width: 290px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    @include create-accessory-element(line-block)

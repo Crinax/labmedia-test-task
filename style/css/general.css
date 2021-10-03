@@ -36,12 +36,14 @@ body .main .main__video-features .video-features__feature:nth-child(even) {
 body .main .main__video-features .video-features__feature .feature__image {
   width: 60px;
   height: 60px;
+  margin-bottom: 20px;
 }
 
-body .main .main__video-features .video-features__feature .feture__text {
+body .main .main__video-features .video-features__feature .feature__text {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
 
 * {
@@ -110,8 +112,6 @@ body .header .header__logo-e {
   height: 35px;
   background-size: 35px 35px;
   margin: 0 0 0 15px;
-  background-image: url("../img/Logo_e.svg");
-  background-repeat: no-repeat;
 }
 @media screen and (max-width: 320px) {
   body .header .header__logo-e {
@@ -125,7 +125,6 @@ body .header .header__logo-m {
   height: 40px;
   background-size: 40px 40px;
   margin: 0 0 0 15px;
-  background-image: url("../img/Logo_m.svg");
 }
 @media screen and (max-width: 320px) {
   body .header .header__logo-m {
@@ -257,6 +256,7 @@ body .main .main__phone-features .phone-features__case .case__text {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
 body .main .main__phone-features .phone-features__case .case__subimage-line {
   width: 290px;
@@ -283,4 +283,22 @@ body .main .main__video-features .video-features__feature .feature__image.stabil
 }
 body .main .main__video-features .video-features__feature .feature__image.quality {
   background-image: url("../img/quality.svg");
+}
+body .main .main__accessories {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+body .main .main__accessories .accessories__image-block {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main .main__accessories .accessories__line-block {
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

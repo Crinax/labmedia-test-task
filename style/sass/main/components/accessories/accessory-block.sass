@@ -1,0 +1,8 @@
+@import 'blocks/image-block'
+@import 'blocks/line-block'
+
+@mixin create-accessory-block($with)
+  @if $with == image-block
+    @include create-image-block
+  @if $with == line-block
+    @include create-line-block
