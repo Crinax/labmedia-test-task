@@ -1,0 +1,14 @@
+@import 'app-block'
+@import 'line'
+
+@mixin create-apps
+  .main__apps
+    margin: 0 0 104px 15px
+    width: 290px
+    display: flex
+    flex-direction: column
+    @each $type in (row, row-reverse)
+      @include create-app-block($type)
+    .apps__line
+      @extend .main__line
+      margin: 30px 0

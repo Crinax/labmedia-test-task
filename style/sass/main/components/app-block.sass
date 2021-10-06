@@ -1,0 +1,17 @@
+@mixin create-app-block($type)
+  .apps__app-block-#{$type}
+    display: flex
+    flex-direction: $type
+    justify-content: space-evenly
+    align-content: center
+    .app-block__image
+      width: 60px
+      height: 60px
+    .app-block__text
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 17px
+      margin: 0
+      padding: 0
+      width: 205px
