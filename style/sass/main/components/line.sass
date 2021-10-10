@@ -1,7 +1,10 @@
 @mixin create-line
   .main__line
-    width: 290px
+    width: calc(100vw - 15px - 15px)
     height: 1px
     background-color: $section-divider
     border: none
     margin: 20px auto
+    @media (min-width: 321px)
+      width: calc(100vw - 25px - 25px)
+      margin: 40px auto

@@ -4,11 +4,26 @@
   .image-block__image
     width: 290px
     height: 150px
+    @media (min-width: 321px)
+      width: 325px
+      height: 168px
+    @media (min-width: 721px)
+      width: 222px
+      height: 115px
   .image-block__line
     @extend .main__line
     width: 290px
+    @media (min-width: 321px)
+      width: 325px
+    @media (min-width: 721px)
+      width: 223px
   .image-block__text
     font-size: 14px
     line-height: 21px
     margin: 0
     padding: 0
+    @media (min-width: 321px)
+      width: 325px
+    @media (min-width: 721px)
+      font-size: 16px
+      width: 223px

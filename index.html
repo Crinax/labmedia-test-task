@@ -14,7 +14,8 @@
     <img src="style/img/Logo_m.svg" alt="Логотип М.Видео" class="header__logo-m logotypes" />
 
     <!-- Course name -->
-
+    <p class="header__course-name">Название курса в одну строку</p>
+    
     <!-- Burger menu -->
     <div class="header__burger">
       <div class="header__burger-line burger-line-1"></div>
@@ -66,26 +67,28 @@
     <hr class="main__line" />
     <h2 class="main__subtitle">Съемка видео</h2>
 
-    <img class="main__video-img" src="style/img/video_img.png" />
-
-    <div class="main__video-features">
-      <div class="video-features__feature">
-        <div class="feature__image quality"></div>
-        <p class="feature__text">
-          Отличное качество съемки новых поколениесмартфонов Samsung позволит создать и смотреть праздники, семейные торжества и памятные моменты на огромном экране, с яркими, живыми цветами и прекрасной детализацией. 
-        </p>
-      </div>
-      <div class="video-features__feature">
-        <div class="feature__image stabilization"></div>
-        <p class="feature__text">
-          Дополнительная система стабилизации сделает видеоролики плавными и красивыми.
-        </p>
-      </div>
-      <div class="video-features__feature">
-        <div class="feature__image slowmotion"></div>
-        <p class="feature__text">
-          Сверхзамедленная съемка (960 кадров в секунду) теперь в 2 раза дольше. Камера в S10 способна распознать  самое стремительное движение, такое как языки пламени, брызги воды, дым из под колес спорткара.
-        </p>
+    <div class="video-wrapper">
+      <img class="main__video-img" src="style/img/video_img.png" />
+  
+      <div class="main__video-features">
+        <div class="video-features__feature">
+          <div class="feature__image quality"></div>
+          <p class="feature__text">
+            Отличное качество съемки новых поколениесмартфонов Samsung позволит создать и смотреть праздники, семейные торжества и памятные моменты на огромном экране, с яркими, живыми цветами и прекрасной детализацией. 
+          </p>
+        </div>
+        <div class="video-features__feature">
+          <div class="feature__image stabilization"></div>
+          <p class="feature__text">
+            Дополнительная система стабилизации сделает видеоролики плавными и красивыми.
+          </p>
+        </div>
+        <div class="video-features__feature">
+          <div class="feature__image slowmotion"></div>
+          <p class="feature__text">
+            Сверхзамедленная съемка (960 кадров в секунду) теперь в 2 раза дольше. Камера в S10 способна распознать  самое стремительное движение, такое как языки пламени, брызги воды, дым из под колес спорткара.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -93,14 +96,14 @@
 
     <div class="main__accessories">
       <div class="accessories__image-block">
-        <img src="style/img/galaxy-s10_accessories_cases.png" alt="Ассортимент чехлом" class="image-block__image">
+        <img src="style/img/galaxy-s10_accessories_cases.svg" alt="Ассортимент чехлом" class="image-block__image">
         <hr class="image-block__line">
         <p class="image-block__text">
           Обширный ассортимент чехлов лля каждой модели. Цветовая гамма, отличное качество, премиальные материалы и дополнительные возможности призваны удовлетворить даже самый притязательный вкус.
         </p>
       </div>
       <div class="accessories__image-block">
-        <img src="style/img/galaxy-s10_accessories_power.png" alt="Ассортимент чехлом" class="image-block__image">
+        <img src="style/img/galaxy-s10_accessories_power.svg" alt="Ассортимент чехлом" class="image-block__image">
         <hr class="image-block__line">
         <p class="image-block__text">
           Беспроводная зарядная станция Duo Pad быстро заряжает одновременно два устройства, одно из которых охлаждается.
@@ -127,7 +130,7 @@
     <h2 class="main__subtitle">Приложения и сервисы Samsung</h2>
 
     <div class="main__apps">
-      <div class="apps__app-block-row">
+      <div class="apps__app-block">
         <img src="style/img/Smart_Switch.svg" alt="Smart Switch" class="app-block__image">
         <p class="app-block__text">
           Благодаря приложению Smart Switch можно перенести информацию со старого смартфона на новый.
@@ -135,7 +138,7 @@
       </div>
 
       <hr class="apps__line" />
-      <div class="apps__app-block-row-reverse">
+      <div class="apps__app-block">
         <img src="style/img/Samsung_Health.svg" alt="Samsung Health" class="app-block__image">
         <p class="app-block__text">
           Приложение Samsung Health помогает контролировать физическую активность и вести дневник питания.
@@ -143,7 +146,7 @@
       </div>
 
       <hr class="apps__line" />
-      <div class="apps__app-block-row">
+      <div class="apps__app-block">
         <img src="style/img/Bixby.svg" alt="Bixby" class="app-block__image">
         <p class="app-block__text">
           Интеллектуальный помощник Bixby обеспечит быстрый доступ к переводчику, поиску в Интернете, покупкам и многому другому. 
@@ -151,7 +154,7 @@
       </div>
 
       <hr class="apps__line" />
-      <div class="apps__app-block-row-reverse">
+      <div class="apps__app-block">
         <img src="style/img/Samsung_pay.svg" alt="Samsung Pay" class="app-block__image">
         <p class="app-block__text">
           Приложение Samsung Pay дает возможность оплачивать свои покупки при помощи смартфона. 
@@ -159,7 +162,7 @@
       </div>
 
       <hr class="apps__line" />
-      <div class="apps__app-block-row">
+      <div class="apps__app-block">
         <img src="style/img/SmartThings.svg" alt="Smart Things" class="app-block__image">
         <p class="app-block__text">
           Благодаря приложению Smart Things можно управлять всеми смарт-устройствами дома.

@@ -16,7 +16,12 @@
     @include create-line
     @include create-subtitle
     @include create-phone-features
-    @include create-video-img
-    @include create-video-features
+    .video-wrapper
+      display: flex
+      flex-direction: column
+      @media (min-width: 321px)
+        flex-direction: row
+      @include create-video-img
+      @include create-video-features
     @include create-accessories
     @include create-apps

@@ -7,8 +7,17 @@
     width: 290px
     display: flex
     flex-direction: column
-    @each $type in (row, row-reverse)
-      @include create-app-block($type)
+    @include create-app-block(row, row-reverse)
+    @media (min-width: 321px)
+      width: 690px
+      flex-wrap: wrap
+      margin: 20px 0 104px 25px
+      flex-direction: row
+      @include create-app-block(column)
+    @media (min-width: 721px)
+      width: 970px
     .apps__line
       @extend .main__line
       margin: 30px 0
+      @media (min-width: 321px)
+        display: none

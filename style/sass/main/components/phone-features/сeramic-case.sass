@@ -5,6 +5,8 @@
     @extend .phone-features__display
     background-color: transparent
     padding: 0
+    @media (min-width: 321px)
+      order: 2
     .case__image
       width: 154px
       height: 180px
@@ -13,8 +15,17 @@
       font-size: 14px
       line-height: 21px
       margin: 0
+      @media (min-width: 321px)
+        line-height: 21px
+      @media (min-width: 721px)
+        font-size: 16px
+        line-height: 24px
     .case__subimage-line
       width: 290px
+      @media (min-width: 321px)
+        width: 325px
+      @media (min-width: 721px)
+        width: 223px
       height: 1px
       margin: 25px 0 20px 0
       background-color: $block-divider

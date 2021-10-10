@@ -5,6 +5,13 @@
     border-radius: 5px
     background-color: $black
     display: flex
+    @media (min-width: 321px)
+      order: 1
+      width: 325px
+      height: 333px
+    @media (min-width: 721px)
+      width: 222px
+      height: 304px
     flex-direction: column
     align-items: center
     justify-content: center
@@ -12,6 +19,12 @@
     .display__image-wrap
       width: 260px
       height: 158px
+      @media (min-width: 321px)
+          width: 295px
+          height: 183px
+      @media (min-width: 721px)
+          width: 192px
+          height: 113px
       display: flex
       justify-content: center
       border-bottom: 1px solid $phone-divider
@@ -19,6 +32,12 @@
       .image-wrap__image
         width: 230px
         height: 158px
+        @media (min-width: 321px)
+          width: 265px
+          height: 183px
+        @media (min-width: 721px)
+          width: 162px
+          height: 112px
     .display__text
       width: 260px
       color: $white
@@ -26,3 +45,9 @@
       font-weight: 500
       font-size: 14px
       line-height: 21px
+      @media (min-width: 321px)
+        width: 295px
+        line-height: 21px
+      @media (min-width: 721px)
+        width: 192px
+        line-height: 24px

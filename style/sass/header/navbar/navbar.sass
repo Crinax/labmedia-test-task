@@ -1,7 +1,9 @@
 @import 'elements/burger'
 @import 'elements/logo'
+@import 'elements/course-name'
 
 @mixin create-navbar
   @include create-burger
   @each $logo in (e, m)
     @include create-logo($logo)
+  @include create-course-name
